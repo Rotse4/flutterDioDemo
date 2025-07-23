@@ -9,7 +9,7 @@ class ApiClient {
   ApiClient() {
     dio = Dio(
       BaseOptions(
-        baseUrl: 'https://jsonplaceholder.typicode.com',
+        baseUrl: 'http://192.168.1.68:8000/api/',
         connectTimeout: const Duration(seconds: 5), // 5 seconds
         receiveTimeout: const Duration(seconds: 3), // 3 seconds
         headers: {'Content-Type': 'application/json'},
